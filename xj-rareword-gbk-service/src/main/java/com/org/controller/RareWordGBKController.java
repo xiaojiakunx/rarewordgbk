@@ -23,12 +23,6 @@ public class RareWordGBKController {
 
     @RequestMapping("rare/word")
     public Integer saveRareWordGbk(@RequestBody UserDTO userDTO) throws UnsupportedEncodingException {
-
-
-        String utf8Str = new String(userDTO.getName().getBytes("GBK"), StandardCharsets.UTF_8);
-
-        System.out.println(userDTO.getName().toString());
-
         return rareWordGBKService.saveUserTc(userDTO);
 
     }

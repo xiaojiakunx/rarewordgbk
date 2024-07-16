@@ -22,14 +22,6 @@ public class GbkEncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-        ServletInputStream inputStream = request.getInputStream();
-
-
-//        request.setCharacterEncoding("GBK");
-//        response.setCharacterEncoding("GBK");
-//
-        String characterEncoding = request.getCharacterEncoding();
-
         chain.doFilter(request,response);
     }
 }

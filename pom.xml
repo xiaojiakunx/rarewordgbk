@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -12,7 +12,7 @@
         <module>xj-rareword-gbk-service</module>
     </modules>
 
-    <!--    管理spring版本-->
+    <!--    绠＄悊spring鐗堟湰-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -22,9 +22,9 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>GBK</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!--        保证下面版本与springboot 保持一致！！！-->
+        <!--        淇濊瘉涓嬮潰鐗堟湰涓巗pringboot 淇濇寔涓�鑷达紒锛侊紒-->
         <spring-boot.version>2.6.7</spring-boot.version>
     </properties>
 

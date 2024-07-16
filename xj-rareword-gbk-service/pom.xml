@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -14,7 +14,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>GBK</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 
@@ -54,14 +54,14 @@
             <version>2.1.2</version>
         </dependency>
 
-        <!--»Áπ˚ƒ„µƒœÓƒø «“ª∏ˆ Web ”¶”√£¨–Ë“™ÃÌº” Web ∆Ù∂Ø∆˜“¿¿µ°£-->
+        <!--Â¶ÇÊûú‰Ω†ÁöÑÈ°πÁõÆÊòØ‰∏Ä‰∏™ Web Â∫îÁî®ÔºåÈúÄË¶ÅÊ∑ªÂä† Web ÂêØÂä®Âô®‰æùËµñ„ÄÇ-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <!--            <version>3.2.6</version>-->
         </dependency>
 
-        <!--        ÃÌº” Oracle JDBC «˝∂Ø“¿¿µ°£-->
+        <!--        Ê∑ªÂä† Oracle JDBC È©±Âä®‰æùËµñ„ÄÇ-->
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
@@ -72,32 +72,32 @@
     </dependencies>
 
     <profiles>
-        <!-- ±æµÿø™∑¢≈‰÷√ -->
+        <!-- Êú¨Âú∞ÂºÄÂèëÈÖçÁΩÆ -->
         <profile>
-            <!--            ymlŒƒº˛µƒŒƒº˛º–-->
-            <!--            <profile> ÷–µƒ id  Ù–‘æﬂ”–“‘œ¬∫¨“Â£∫
-            Œ®“ª±Í ∂£∫id  Ù–‘Œ™ profile Ã·π©¡À“ª∏ˆŒ®“ª±Í ∂£¨ƒ„ø…“‘Õ®π˝’‚∏ˆ±Í ∂¿¥º§ªÓÃÿ∂®µƒ profile°£
-            º§ªÓ Profile£∫‘⁄ππΩ® Maven œÓƒø ±£¨ø…“‘ π”√ -P ≤Œ ˝∫Û∏˙ profile µƒ id ¿¥º§ªÓ∏√ profile°£¿˝»Á£∫
+            <!--            ymlÊñá‰ª∂ÁöÑÊñá‰ª∂Â§π-->
+            <!--            <profile> ‰∏≠ÁöÑ id Â±ûÊÄßÂÖ∑Êúâ‰ª•‰∏ãÂê´‰πâÔºö
+            ÂîØ‰∏ÄÊ†áËØÜÔºöid Â±ûÊÄß‰∏∫ profile Êèê‰æõ‰∫Ü‰∏Ä‰∏™ÂîØ‰∏ÄÊ†áËØÜÔºå‰Ω†ÂèØ‰ª•ÈÄöËøáËøô‰∏™Ê†áËØÜÊù•ÊøÄÊ¥ªÁâπÂÆöÁöÑ profile„ÄÇ
+            ÊøÄÊ¥ª ProfileÔºöÂú®ÊûÑÂª∫ Maven È°πÁõÆÊó∂ÔºåÂèØ‰ª•‰ΩøÁî® -P ÂèÇÊï∞ÂêéË∑ü profile ÁöÑ id Êù•ÊøÄÊ¥ªËØ• profile„ÄÇ‰æãÂ¶ÇÔºö
                     mvn clean install -Pdev -->
             <id>dev</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <!--            ymlŒƒº˛µƒŒƒº˛º–-->
+                <!--            ymlÊñá‰ª∂ÁöÑÊñá‰ª∂Â§π-->
                 <env>dev</env>
             </properties>
         </profile>
 
-        <!-- œﬂ…œ≈‰÷√ -->
+        <!-- Á∫ø‰∏äÈÖçÁΩÆ -->
         <profile>
-            <!--            ymlŒƒº˛µƒŒƒº˛º–-->
+            <!--            ymlÊñá‰ª∂ÁöÑÊñá‰ª∂Â§π-->
             <id>sit</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <!--            ymlŒƒº˛µƒŒƒº˛º–-->
+                <!--            ymlÊñá‰ª∂ÁöÑÊñá‰ª∂Â§π-->
                 <env>sit</env>
             </properties>
         </profile>
@@ -133,10 +133,10 @@
                 </excludes>
             </resource>
             <resource>
-                <!--                …˙–ßµƒresource /configœ¬µƒªÒ»°${env}µƒ÷µ-->
+                <!--                ÁîüÊïàÁöÑresource /config‰∏ãÁöÑËé∑Âèñ${env}ÁöÑÂÄº-->
                 <directory>src/main/resources/config/${env}</directory>
                 <includes>
-<!--                    …Ë÷√ «ymlªπ «properties Œƒº˛-->
+<!--                    ËÆæÁΩÆÊòØymlËøòÊòØproperties Êñá‰ª∂-->
                     <include>**/*.properties</include>
                 </includes>
                 <filtering>true</filtering>
