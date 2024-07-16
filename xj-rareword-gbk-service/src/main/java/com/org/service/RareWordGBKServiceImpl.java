@@ -27,5 +27,6 @@ public class RareWordGBKServiceImpl implements RareWordGBKService{
     public List<UserDTO> queryRareWord(UserIdDTO id) {
 
         System.out.println("这是utf8编码哦！");
+        System.out.println("这是由gbk发起的更新代码");
         return rareWordGBKMapper.queryRareWord(id);    }
 }
