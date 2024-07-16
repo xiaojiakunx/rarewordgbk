@@ -25,5 +25,7 @@ public class RareWordGBKServiceImpl implements RareWordGBKService{
 
     @Override
     public List<UserDTO> queryRareWord(UserIdDTO id) {
+
+        System.out.println("这是utf8编码哦！");
         return rareWordGBKMapper.queryRareWord(id);    }
 }
