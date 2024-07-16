@@ -26,6 +26,6 @@ public class RareWordGBKServiceImpl implements RareWordGBKService{
     @Override
     public List<UserDTO> queryRareWord(UserIdDTO id) {
 
-        System.out.println("è¿™æ˜¯utf8ç¼–ç å“¦ï¼");
+        System.out.println("ÕâÊÇutf8±àÂëÅ¶£¡");
         return rareWordGBKMapper.queryRareWord(id);    }
 }
