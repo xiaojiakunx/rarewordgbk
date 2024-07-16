@@ -1,6 +1,7 @@
 package com.org.controller;
 
 import com.org.dto.UserDTO;
+import com.org.dto.UserIdDTO;
 import com.org.service.RareWordGBKService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 /**
  * @author: xj
@@ -30,6 +32,12 @@ public class RareWordGBKController {
         System.out.println(userDTO.getName().toString());
 
         return rareWordGBKService.saveUserTc(userDTO);
+
+    }
+
+    @RequestMapping()
+    public List<UserDTO> queryRareWord(@RequestBody UserIdDTO id){
+        return rareWordGBKService.queryRareWord(id);
 
     }
 

@@ -9,4 +9,9 @@
     </insert>
 
     <!--    sys_guid()-->
+
+    <select id="queryRareWord" parameterType="com.org.dto.UserIdDTO">
+    select t.id as id ,t.name as name,t.yearold as yearold ,t.opcode as opcode from user_tc t where 1=1 and t.id =#{id}
+
+    </select>
 </mapper>

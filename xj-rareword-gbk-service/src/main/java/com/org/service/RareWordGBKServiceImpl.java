@@ -1,9 +1,12 @@
 package com.org.service;
 
 import com.org.dto.UserDTO;
+import com.org.dto.UserIdDTO;
 import com.org.mapper.RareWordGBKMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author: xj
@@ -19,4 +22,8 @@ public class RareWordGBKServiceImpl implements RareWordGBKService{
     public Integer saveUserTc(UserDTO userDTO) {
         return rareWordGBKMapper.saveUserTc(userDTO);
     }
+
+    @Override
+    public List<UserDTO> queryRareWord(UserIdDTO id) {
+        return rareWordGBKMapper.queryRareWord(id);    }
 }
