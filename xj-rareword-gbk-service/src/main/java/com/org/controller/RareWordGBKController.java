@@ -31,6 +31,8 @@ public class RareWordGBKController {
 
         System.out.println(userDTO.getName().toString());
 
+        System.out.println("这是由GBK分支发起的合并请求，相当于正常分支要增量合并数据到生僻字分支");
+
         return rareWordGBKService.saveUserTc(userDTO);
 
     }
