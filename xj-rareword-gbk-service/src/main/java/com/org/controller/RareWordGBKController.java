@@ -27,6 +27,8 @@ public class RareWordGBKController {
 
     @RequestMapping("rare/word")
     public Integer saveRareWordGbk(@RequestBody UserDTO userDTO) throws UnsupportedEncodingException {
+
+        System.out.println(userDTO.getName());
         return rareWordGBKService.saveUserTc(userDTO);
 
     }
