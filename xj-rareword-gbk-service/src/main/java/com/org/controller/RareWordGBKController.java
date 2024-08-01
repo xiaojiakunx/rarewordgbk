@@ -4,8 +4,10 @@ import com.org.dto.UserDTO;
 import com.org.dto.UserIdDTO;
 import com.org.service.RareWordGBKService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.UnsupportedEncodingException;
@@ -38,9 +40,19 @@ public class RareWordGBKController {
     }
 
     @RequestMapping()
-    public List<UserDTO> queryRareWord(@RequestBody UserIdDTO id){
+    public List<UserDTO> queryRareWord(@RequestBody UserIdDTO id) {
         return rareWordGBKService.queryRareWord(id);
 
+    }
+
+    @PostMapping("/controller")
+    public String handlePostRequest(
+            @RequestParam("data") String data) {
+        // 打印接收到的参数
+        System.out.println("Received data: " + data);
+
+        // 响应客户端
+        return "Received data: " + data;
     }
 
 
