@@ -18,10 +18,11 @@ public class RareWordGBKApplication {
         SpringApplication.run(RareWordGBKApplication.class, args);
 
         log.info("\n"+
-                "* * 项目启动成功！！！！！" +"\n"+
-                "* * * 小 阿 天 * * * " +"\n"+
-                "* * * * 祝 我 * * * " +"\n"+
-                "* * * * * 代 码 永 无 bug * * * ");
+                "* *浣犲ソ" +"\n"+
+                "* *  * * * " +"\n"+
+                "* * *" +
+                " * * * " +"\n"+
+                "* * * * * bug * * * ");
 
     }
 }
