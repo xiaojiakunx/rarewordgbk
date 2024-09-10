@@ -1,7 +1,6 @@
 package com.org.controller;
 
 import com.org.dto.UserDTO;
-import com.org.dto.UserIdDTO;
 import com.org.service.RareWordGBKService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 /**
  * @author: xj
@@ -20,7 +17,7 @@ import java.util.List;
  * @description:
  */
 @RestController
-public class RareWordGBKController {
+public class RareWordUTFController {
 
     @Autowired
     RareWordGBKService rareWordGBKService;

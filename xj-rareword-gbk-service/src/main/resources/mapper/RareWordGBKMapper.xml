@@ -5,7 +5,7 @@
     <!-- 插入用户信息 -->
     <insert id="saveUserTc" parameterType="com.org.dto.UserDTO">
         INSERT INTO user_tc (id, name, yearold,opcode,creatime,updatetime)
-        VALUES (#{id}, #{name}, #{yearold},#{opcode},sysdate,sysdate)
+        VALUES (#{id}, #{name}, #{yearold},'肖佳来啦',sysdate,sysdate)
     </insert>
 
     <!--    sys_guid()-->
